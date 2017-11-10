@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:key="@string/key_about"
+            android:summary="@string/summary_name"
+            android:title="@string/app_name">
+            <intent android:data="market://details?id=com.yaerin.cooldp" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.yaerin.cooldp.SplashActivity">
+
+    <ImageView
+        android:id="@+id/mWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/mBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#90FFFFFF"
+        android:elevation="4dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="80dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:id="@+id/mSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFAFAFA"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/mTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/mTools"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/mSummary"
+            android:background="#FF303030">
+
+            <ImageButton
+                android:id="@+id/mBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@drawable/ripple"
+                android:contentDescription="@null"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:src="@drawable/ic_chevron_left_white_24dp" />
+
+            <Button
+                android:id="@+id/mSet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/ripple"
+                android:drawableStart="@drawable/ic_wallpaper_white_24dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:text="@string/set_wallpaper"
+                android:textColor="#fafafa"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/mMore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/ripple"
+                android:contentDescription="@null"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:src="@drawable/ic_expand_less_white_24dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mTools"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/mFragment"
+                android:name="com.yaerin.cooldp.SettingsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/mProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="8dp" />
+
+</android.support.design.widget.CoordinatorLayout>

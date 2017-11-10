@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">必应日图</string>
+    <string name="failure">超时或没有网络连接</string>
+    <string name="retry">重试</string>
+    <string name="none">"没有了呢"</string>
+    <string name="loading">正在拾缀%s天前的&#8230;</string>
+    <string name="set_wallpaper">设为壁纸</string>
+    <string name="setting">"正在将可见区域设为壁纸&#8230;</string>
+    <string name="set_ok">"壁纸设置成功"</string>
+    <string name="about">关于</string>
+    <string name="summary_name">Copyright © 2017 Yaerin\n查看应用详情页(酷安)</string>
+    <string name="data_url">https://github.com/Yaerin/DP</string>
+    <string name="title_lic">开源许可</string>
+    <string name="lic_apache">Apache License 2.0</string>
+    <string name="key_about">about</string>
+    <string name="key_license">license</string>
+</resources>
