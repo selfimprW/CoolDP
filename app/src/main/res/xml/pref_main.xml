@@ -7,5 +7,10 @@
             android:title="@string/app_name">
             <intent android:data="market://details?id=com.yaerin.cooldp" />
         </Preference>
+        <Preference
+            android:summary="@string/lic_gpl"
+            android:title="@string/title_lic">
+            <intent android:data="@string/data_url" />
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

@@ -21,7 +21,6 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.bumptech.glide.request.RequestOptions;
 import com.github.florent37.glidepalette.GlidePalette;
 import com.google.gson.Gson;
-import com.yaerin.dp.R;
 
 import java.io.IOException;
 import java.net.URL;

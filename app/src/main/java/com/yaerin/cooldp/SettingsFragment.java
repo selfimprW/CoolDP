@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.support.annotation.Nullable;
 
-import com.yaerin.dp.R;
-
 /**
  * Created by yaerin on 7/29/17.
  */
